@@ -4,12 +4,6 @@ An interactive Python maze visualizer built for **COSC 316: Design and Analysis 
 
 This project explores shortest-path and pathfinding ideas through a desktop application where users can generate random mazes, adjust maze size and wall density, edit walls manually, and watch the solver animate a path from start to goal.
 
-## Live Demo
-
-[Open the live project page](https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-NAME/)
-
-After you enable GitHub Pages, replace `YOUR-USERNAME` and `YOUR-REPOSITORY-NAME` with your actual GitHub username and repository name.
-
 ## Features
 
 - Random maze generation with adjustable wall density
