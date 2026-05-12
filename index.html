@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maze Solver Visualizer | COSC 316</title>
+  <meta name="description" content="Interactive maze solver and pathfinding visualizer built for COSC 316 at RHU.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="topbar">
+      <span class="brand">Maze Solver Visualizer</span>
+      <div class="topbar-links">
+        <a href="README.md">README</a>
+        <a href="main.py">Source Code</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow">COSC 316 - RHU - Fall 2024</p>
+        <h1>Pathfinding, visualization, and algorithm design in one interactive project.</h1>
+        <p class="hero-text">
+          This project was built for the Design and Analysis of Algorithms course at Rafik Hariri University.
+          It turns maze traversal into a visual desktop experience where users can generate obstacles, adjust maze size,
+          and watch the solver move from start to goal.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="README.md">Read Project Overview</a>
+          <a class="button button-secondary" href="#screenshots">View Screenshots</a>
+        </div>
+      </section>
+
+      <figure class="hero-shot">
+        <img src="screenshots/maze-solving.png" alt="Maze solver visualization with highlighted path">
+      </figure>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div class="section-heading">
+        <p class="eyebrow">Project Summary</p>
+        <h2>What this project does</h2>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Interactive Maze Generation</h3>
+          <p>Create random mazes with different wall densities and experiment with how obstacle placement changes the search problem.</p>
+        </article>
+        <article class="card">
+          <h3>Visual Pathfinding</h3>
+          <p>See the route from the start point to the destination through an animated game-style interface built with Python Tkinter.</p>
+        </article>
+        <article class="card">
+          <h3>Algorithm Thinking</h3>
+          <p>Connect abstract shortest-path ideas from class to a working implementation that can be tested and observed in real time.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="section-heading">
+        <p class="eyebrow">Screenshots</p>
+        <h2>Project visuals</h2>
+      </div>
+      <div class="gallery">
+        <figure class="shot-card">
+          <img src="screenshots/maze-home.png" alt="Generated maze board with start and goal">
+          <figcaption>Generated maze state using the project assets and grid layout.</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="screenshots/maze-generated.png" alt="Random maze variation with different wall arrangement">
+          <figcaption>Randomized layout showing how wall placement changes the pathfinding space.</figcaption>
+        </figure>
+        <figure class="shot-card">
+          <img src="screenshots/maze-solving.png" alt="Solver state with highlighted path from start to end">
+          <figcaption>Solver preview with the computed route highlighted across the maze.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section two-column">
+      <div>
+        <p class="eyebrow">Course Reflection</p>
+        <h2>What I learned in COSC 316</h2>
+        <p>
+          This project helped translate course theory into implementation. Instead of only discussing shortest-path
+          problems in class, I built a visual system that represents a maze as a graph-like grid and shows how a solver
+          can search for a route under constraints.
+        </p>
+        <ul class="list">
+          <li>How graph and grid representations support pathfinding problems</li>
+          <li>How heuristic-guided search can reduce unnecessary exploration</li>
+          <li>How algorithm efficiency affects responsiveness in interactive software</li>
+          <li>How to turn algorithm design ideas into a complete user-facing application</li>
+        </ul>
+      </div>
+
+      <div class="note-panel">
+        <p class="eyebrow">Implementation Note</p>
+        <h3>Current solver</h3>
+        <p>
+          The current code uses <strong>A*</strong> search with a Manhattan-distance heuristic.
+          The repository name references Dijkstra's algorithm, but the implemented solver is heuristic-based.
+        </p>
+        <p>
+          A strong next improvement would be adding a true Dijkstra implementation and comparing both approaches side by side.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Run Locally</p>
+        <h2>How to try the project</h2>
+      </div>
+      <div class="code-panel">
+<pre><code>pip install -r requirements.txt
+python main.py</code></pre>
+      </div>
+      <p class="muted">
+        GitHub Pages hosts this overview site. The Python Tkinter application itself still runs locally as a desktop app.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
